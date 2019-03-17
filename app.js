@@ -15,6 +15,8 @@ function loadEventListeners() {
     form.addEventListener('submit', addTask);
     // Remove task event
     taskList.addEventListener('click', removeTask);
+    // Clear task event
+    clearBtn.addEventListener('click', clearTasks);
 }
 
 // Add Task
@@ -59,3 +61,17 @@ function removeTask(e) {
         }
     }
 }
+
+// Clear Tasks
+
+function clearTasks(e) {
+    
+    // Setting ul content to none
+    // taskList.innerHTML = '';
+    
+    // Faster and better way with while loop
+    while(taskList.firstChild) {
+        taskList.removeChild(taskList.firstChild);
+    }
+}
+    
