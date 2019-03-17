@@ -1,4 +1,4 @@
-# Dashboard Tasks with JavaScripts
+# Dashboard Tasks with JavaScript
 ## Functionalities:
 ### Add tasks
 ### Filter through tasks
